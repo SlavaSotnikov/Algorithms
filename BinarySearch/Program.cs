@@ -4,47 +4,47 @@ namespace BinarySearch
 {
     class Program
     {
-        static void Show() { Console.WriteLine("Number doesn't exist."); }
+        static void Show(int x) { Console.WriteLine("Number {0} doesn't exist.", x); }
         static void ShowIndex(int a, int b) { Console.WriteLine("Number {0} array's index {1}", a, b); }
         static void Main()
         {
-            int x = 67;
-            int[] myArr = { -55, -49, -17, 8, 41, 56, 60, 67, 85, 99 };
+            int x = -82;
+            int[] yourArr = { -83, -79, -56, -9, -5, -2, 7, 24, 31, 61 };
 
             int left = 0;
-            int right = myArr.Length;
-            int z = myArr.Length >> 1;
+            int right = yourArr.Length;
+            int z = yourArr.Length >> 1;
 
 
             do
             {
-                if (x == myArr[z])
+                if (x == yourArr[z])
                 {
                     ShowIndex(x, z); break;
                 }
 
-                if (x > myArr[z])
+                if (x > yourArr[z])
                 {
                     left = ++z;
-                    if (left >= myArr.Length)
+                    if (left >= yourArr.Length)
                     {
-                        Show(); break;
+                        Show(x); break;
                     }
-                    if (x == myArr[left])
+                    if (x == yourArr[left])
                     {
                         ShowIndex(x, left); break;
                     }
                     z = (left + right) >> 1;
                 }
 
-                if (x < myArr[z])
+                if (x < yourArr[z])
                 {
                     right = --z;
                     if (0 > right || right < left)
                     {
-                        Show(); break;
+                        Show(x); break;
                     }
-                    if (x == myArr[right])
+                    if (x == yourArr[right])
                     {
                         ShowIndex(x, right); break;
                     }
@@ -53,7 +53,7 @@ namespace BinarySearch
 
                 if (left == right)
                 {
-                    Show(); break;
+                    Show(x); break;
                 }
 
             } while (left != right);

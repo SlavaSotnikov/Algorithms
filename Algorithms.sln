@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleGoesUpDown", "BubbleG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{C0CC4E61-7F46-4404-A6AC-271A87AC1C03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{02AE1EF7-E910-48D0-B6C9-8E6AB4B3A3F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C0CC4E61-7F46-4404-A6AC-271A87AC1C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0CC4E61-7F46-4404-A6AC-271A87AC1C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0CC4E61-7F46-4404-A6AC-271A87AC1C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02AE1EF7-E910-48D0-B6C9-8E6AB4B3A3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02AE1EF7-E910-48D0-B6C9-8E6AB4B3A3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02AE1EF7-E910-48D0-B6C9-8E6AB4B3A3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02AE1EF7-E910-48D0-B6C9-8E6AB4B3A3F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
